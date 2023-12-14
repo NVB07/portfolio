@@ -1,0 +1,14 @@
+.btnToggle {
+    position: relative;
+    height: 24px;
+    width: 24px;
+    color: var(--foreground-rgb);
+}
+.icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 24px;
+    width: 24px;
+    transition: all 0.7s ease;
+}

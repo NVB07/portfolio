@@ -1,0 +1,113 @@
+.home {
+    height: 530px;
+    background-color: rgb(var(--background-rgb));
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.leftContent {
+    width: 50%;
+}
+.leftContent .greeting {
+    margin-bottom: 5px;
+}
+.leftContent h1 span {
+    display: inline-block;
+    transform-origin: 70% 70%;
+    animation: wave 2s linear infinite;
+}
+.leftContent h1 span svg {
+    height: 32px;
+    width: 36px;
+}
+@keyframes wave {
+    0% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(14deg);
+    }
+    20% {
+        transform: rotate(-8deg);
+    }
+    30% {
+        transform: rotate(14deg);
+    }
+    40% {
+        transform: rotate(-4deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    60% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+.title {
+    opacity: 0;
+}
+.leftContent .descript {
+    color: #6061ef;
+    font-size: 1.25rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: fit-content;
+}
+.leftContent .typing {
+    display: block;
+    padding: 0 5px;
+    position: relative;
+}
+
+.leftContent .descript:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background-color: #6061ef;
+    transition: none;
+    animation: blink 0.2s linear infinite;
+}
+@keyframes blink {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.social > a + a {
+    margin-left: 28px;
+}
+.social a {
+    color: #6b7280;
+}
+
+.icon {
+    color: currentcolor;
+    width: 24px;
+    height: 24px;
+}
+.social a.github:hover {
+    color: #000;
+}
+.social a.facebook:hover {
+    color: #0866ff;
+}
+.social a.tiktok:hover {
+    color: #000;
+}
