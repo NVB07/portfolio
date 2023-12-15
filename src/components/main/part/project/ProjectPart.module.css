@@ -1,0 +1,8 @@
+.project {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.project > .title {
+    font-size: 24px;
+}

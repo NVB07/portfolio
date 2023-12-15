@@ -28,15 +28,9 @@ const ToggleTheme = () => {
         if (isDark === "true") {
             setdarkTheme(true);
             document.documentElement.setAttribute("data-theme", "dark");
-            document.body.style.setProperty("--background-rgb", "40, 42, 54");
-            document.body.style.setProperty("--foreground-rgb", "255, 255, 255");
-            document.documentElement.style.setProperty("--scheme-state", "dark");
         } else {
             setdarkTheme(false);
             document.documentElement.setAttribute("data-theme", "light");
-            document.body.style.setProperty("--background-rgb", "255, 255, 255");
-            document.body.style.setProperty("--foreground-rgb", "40, 42, 54");
-            document.documentElement.style.setProperty("--scheme-state", "light");
         }
     }, [darkTheme]);
 

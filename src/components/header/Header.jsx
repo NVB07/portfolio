@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode, faHouse, faUser } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faPaperPlane } from "@fortawesome/free-regular-svg-icons";
 import Link from "next/link";
 import style from "./Header.module.css";
-import { faPaperPlane } from "@fortawesome/free-regular-svg-icons";
 import ToggleTheme from "../handleComponents/toggleTheme/ToggleTheme";
 
 const Header = () => {
@@ -17,13 +17,13 @@ const Header = () => {
                 </Link>
                 <div className={style.navigate}>
                     <div>
-                        <a className={style.link} href="#">
+                        <a className={style.link} href="#home">
                             <FontAwesomeIcon className={style.icon} icon={faHouse} />
                             Home
                         </a>
                     </div>
                     <div>
-                        <a className={style.link} href="#">
+                        <a className={style.link} href="#about">
                             <FontAwesomeIcon className={style.icon} icon={faUser} />
                             About
                         </a>

@@ -1,8 +1,14 @@
-@import url(https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css);
+/* @import url(https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css); */
 :root {
     --foreground-rgb: 40, 42, 54;
     --background-rgb: 255, 255, 255;
     --scheme-state: light;
+    --primary-color-button: 87, 13, 248;
+    --primary-color-button-hover: 68, 6, 203;
+    --transparent-button: 57, 205, 191;
+    --transparent-button-hover: 42, 166, 154;
+    --second-bg: #e3f2fd;
+    --padding-body: 24px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -10,7 +16,32 @@
         --foreground-rgb: 255, 255, 255;
         --background-rgb: 40, 42, 54;
         --scheme-state: dark;
+        --primary-color-button: 255, 121, 198;
+        --primary-color-button-hover: 255, 46, 166;
+        --transparent-button: 229, 166, 102;
+        --transparent-button-hover: 255, 149, 35;
     }
+}
+
+[data-theme="light"] {
+    color-scheme: light;
+    --foreground-rgb: 40, 42, 54;
+    --background-rgb: 255, 255, 255;
+    --scheme-state: light;
+    --primary-color-button: 87, 13, 248;
+    --primary-color-button-hover: 68, 6, 203;
+    --transparent-button: 57, 205, 191;
+    --transparent-button-hover: 42, 166, 154;
+}
+[data-theme="dark"] {
+    color-scheme: dark;
+    --foreground-rgb: 255, 255, 255;
+    --background-rgb: 40, 42, 54;
+    --scheme-state: dark;
+    --primary-color-button: 255, 121, 198;
+    --primary-color-button-hover: 255, 46, 166;
+    --transparent-button: 229, 166, 102;
+    --transparent-button-hover: 255, 149, 35;
 }
 
 * {
@@ -21,6 +52,7 @@
 }
 html {
     background-color: var(--background-rgb);
+    scroll-behavior: smooth;
 }
 
 html,
@@ -32,7 +64,6 @@ body {
 body {
     color: rgb(var(--foreground-rgb));
     background: rgb(var(--background-rgb));
-    padding: 0 24px;
 }
 
 a {
@@ -49,6 +80,6 @@ button {
 
 @media (prefers-color-scheme: dark) {
     html {
-        color-scheme: var(--scheme-state);
+        /* color-scheme: var(--scheme-state); */
     }
 }

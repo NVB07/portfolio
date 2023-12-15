@@ -4,7 +4,7 @@
     top: 0;
     left: 0;
     z-index: 999;
-    padding: 0 24px;
+    padding: 0 calc(16px + var(--padding-body));
     background-color: rgb(var(--background-rgb));
 }
 .navWrapper {

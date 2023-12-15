@@ -18,5 +18,26 @@ const SunBrightIcon = ({ classCustom, styleInline }) => {
         </svg>
     );
 };
+const BgSVG = ({ classCustom, styleInline }) => {
+    return (
+        <svg style={styleInline} className={classCustom} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" fill="#e3f2fd">
+            <path
+                fillOpacity="1"
+                d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+            ></path>
+        </svg>
+    );
+};
 
-export { MoonIcon, SunBrightIcon };
+const BgSVG2 = ({ classCustom, styleInline }) => {
+    return (
+        <svg style={styleInline} className={classCustom} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" fill="#e3f2fd">
+            <path
+                fillOpacity="1"
+                d="M0,160L40,138.7C80,117,160,75,240,64C320,53,400,75,480,106.7C560,139,640,181,720,197.3C800,213,880,203,960,170.7C1040,139,1120,85,1200,80C1280,75,1360,117,1400,138.7L1440,160L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"
+            ></path>
+        </svg>
+    );
+};
+
+export { MoonIcon, SunBrightIcon, BgSVG, BgSVG2 };
