@@ -1,8 +1,75 @@
 .project {
-    padding-top: 50px;
+    padding-top: 110px;
+}
+.project > .title {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.project > .title > h1 {
+    font-size: 24px;
+    position: relative;
+    text-align: center;
+}
+.title > h1::after {
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 5px;
+    background-color: rgb(108, 99, 255);
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.mainProject {
+    display: flex;
+    width: 100%;
+    justify-content: left;
+    margin-top: 80px;
+}
+.leftProject,
+.rightProject {
+    width: 50%;
+    height: 50px;
     display: flex;
     justify-content: center;
 }
-.project > .title {
-    font-size: 24px;
+
+.blockProject {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.CardProject {
+    background-color: #717482;
+    border-radius: 8px;
+}
+
+.butonViewGithub {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+.butonViewGithub .button {
+    text-transform: uppercase;
+    width: 256px;
+    height: 48px;
+    background-color: var(--buttonview-github-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: rgb(var(--foreground-card-rgb));
+    font-weight: 700;
+    border-radius: 8px;
+}
+.butonViewGithub .button p {
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 5px;
+}
+.butonViewGithub .button:hover {
+    background-color: var(--buttonview-github-bg-hover);
 }

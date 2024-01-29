@@ -64,7 +64,7 @@ const HomePart = () => {
                         <FontAwesomeIcon className={style.icon} icon={faUser} />
                         About me
                     </a>
-                    <a href="#" className={style.linkProject}>
+                    <a href="#project" className={style.linkProject}>
                         <FontAwesomeIcon className={style.icon} icon={faCode} />
                         some of my projects
                     </a>
@@ -72,7 +72,7 @@ const HomePart = () => {
             </div>
             <div className={style.rightContent}>
                 <div className={style.imageWrapper}>
-                    <Image alt="Dev image" src={"/image/developer-pic-1.webp"} className={style.image} width={580} height={580} priority />
+                    <Image alt="Dev image" src={"/image/image3.png"} className={style.image} width={580} height={580} priority />
                 </div>
             </div>
         </div>

@@ -29,13 +29,13 @@ const Header = () => {
                         </a>
                     </div>
                     <div>
-                        <a className={style.link} href="#">
+                        <a className={style.link} href="#project">
                             <FontAwesomeIcon className={style.icon} icon={faCode} />
                             Project
                         </a>
                     </div>
                     <div>
-                        <a className={style.link} href="#">
+                        <a className={style.link} href="#contact">
                             <FontAwesomeIcon className={style.icon} icon={faPaperPlane} />
                             Contact
                         </a>
@@ -43,7 +43,7 @@ const Header = () => {
                 </div>
                 <div className={style.setting}>
                     <div className={style.source}>
-                        <a href="#">
+                        <a href="https://github.com/NVB07">
                             <FontAwesomeIcon className={style.icon} icon={faGithub} />
                         </a>
                     </div>

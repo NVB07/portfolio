@@ -1,0 +1,59 @@
+.CardWrapper {
+    width: 100%;
+    display: flex;
+}
+.CardWrapper.CardWrapper_left {
+    justify-content: flex-start;
+}
+.CardWrapper.CardWrapper_right {
+    justify-content: flex-end;
+}
+.CardArea {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.Card {
+    width: 448px;
+    height: fit-content;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+    transition: transform 0.2s ease;
+    transform-origin: center bottom;
+}
+.Card.card_left:hover {
+    transform: rotate(5deg) scale(1.15);
+}
+.Card.card_right:hover {
+    transform: rotate(-5deg) scale(1.15);
+}
+.cardImage {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    object-fit: cover;
+    z-index: -1;
+}
+.CardContent {
+    background-color: #717482d7;
+    padding: 32px;
+    color: rgb(var(--foreground-card-rgb));
+}
+.CardHeader {
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+}
+.icon {
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    margin-right: 7px;
+}
+.title {
+    font-size: 20px;
+    font-weight: 700;
+}

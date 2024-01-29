@@ -8,7 +8,7 @@ export default function Home() {
     return (
         <main className={styles.main}>
             <HomePart />
-            <BgSVG styleInline={{ "margin-bottom": "-4px" }} />
+            <BgSVG styleInline={{ marginBottom: "-4px" }} />
             <AboutPart />
             <BgSVG2 />
             <ProjectPart />

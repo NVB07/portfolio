@@ -9,7 +9,6 @@
 .leftContent,
 .rightContent {
     width: 50%;
-    height: 100%;
 }
 .leftContent .greeting {
     margin-bottom: 5px;
@@ -163,5 +162,6 @@
 .imageWrapper .image {
     width: 100%;
     height: auto;
+    padding: 0 100px 0 100px;
     object-fit: cover;
 }
