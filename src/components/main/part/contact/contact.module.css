@@ -1,0 +1,136 @@
+.contact {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #e3f2fd;
+    color: #000;
+    margin-top: -2px;
+    padding-top: 110px;
+}
+.title {
+    font-size: 24px;
+    position: relative;
+}
+.title::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100%;
+    width: 100%;
+    height: 5px;
+    background-color: rgb(108, 99, 255);
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    padding: 64px 100px;
+}
+.left,
+.right {
+    width: 50%;
+}
+.titleFbContact {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    position: relative;
+}
+.titleFbContact::after {
+    content: "";
+    position: absolute;
+    background-color: #6c63ff;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 5px;
+}
+.titleFbContact h4 {
+    margin-left: 5px;
+    font-size: 24px;
+}
+.titleFbContact svg {
+    color: #6c63ff;
+    width: 24px;
+    height: 24px;
+}
+.LiLink {
+    margin-left: 26px;
+    margin-top: 10px;
+}
+.LiLink .link {
+    font-weight: 600;
+}
+.LiLink .link:hover {
+    color: #5208ff;
+}
+.EmailContact {
+    margin-top: 40px;
+}
+
+.information {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.information input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 12px;
+    font-size: 18px;
+    background-color: #d1d5db;
+    border-radius: 10px;
+    color: #000;
+}
+.right h3 {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.name {
+    width: 50%;
+    padding-right: 10px;
+}
+.email {
+    width: 50%;
+    padding-left: 10px;
+}
+.message {
+    margin-top: 32px;
+}
+.message textarea {
+    color: #000;
+    width: 100%;
+    resize: none;
+    height: 150px;
+    padding: 12px;
+    border: none;
+    outline: none;
+    background-color: #d1d5db;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.sendButton {
+    margin-top: 32px;
+    width: 100%;
+}
+.sendButton button {
+    font-size: 14px;
+    width: 100%;
+    height: 48px;
+    border-radius: 10px;
+    font-weight: 700;
+    color: rgb(var(--background-rgb));
+    background-color: rgb(var(--primary-color-button));
+    transition: transform 0.15s ease;
+}
+.sendButton button:hover {
+    background-color: rgb(var(--primary-color-button-hover));
+}
+.sendButton button:active {
+    transform: scale(0.9);
+}

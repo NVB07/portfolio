@@ -3,6 +3,7 @@ import HomePart from "@/components/main/part/home/HomePart";
 import { BgSVG, BgSVG2 } from "@/components/handleComponents/icon/Icons";
 import AboutPart from "@/components/main/part/about/AboutPart";
 import ProjectPart from "@/components/main/part/project/ProjectPart";
+import Contact from "@/components/main/part/contact/Contact";
 
 export default function Home() {
     return (
@@ -12,6 +13,9 @@ export default function Home() {
             <AboutPart />
             <BgSVG2 />
             <ProjectPart />
+            <BgSVG styleInline={{ marginBottom: "-4px" }} />
+            <Contact />
+            <BgSVG2 />
         </main>
     );
 }

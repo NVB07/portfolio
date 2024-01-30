@@ -1,0 +1,85 @@
+.notification {
+    position: fixed;
+    z-index: 99999;
+    top: 30px;
+    right: 20px;
+    width: 300px;
+    height: 80px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 0px #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    overflow: hidden;
+    transform: translateX(calc(100% + 30px));
+    animation: slideIn 3.5s forwards;
+}
+@keyframes slideIn {
+    0% {
+        transform: translateX(calc(100% + 30px)); /* Bắt đầu và kết thúc từ ngoài phải */
+    }
+    10% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    90% {
+        transform: translateX(0);
+        opacity: 1; /* Hiển thị trong khoảng thời gian 10% - 90% */
+    }
+    100% {
+        transform: translateX(calc(100% + 30px));
+        opacity: 0;
+    }
+}
+.icon {
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+}
+.icon svg {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    padding: 10px 0;
+}
+.content,
+.message {
+    width: 180px;
+
+    overflow-wrap: break-word;
+}
+.title {
+    width: 180px;
+    overflow: hidden;
+    font-size: 18px;
+    font-weight: 700;
+    /* text-shadow: 0 0 1px #353535; */
+    text-transform: uppercase;
+}
+.message {
+    padding-top: 10px;
+    font-size: 14px;
+}
+.close {
+    width: 20px;
+    padding: 5px 5px 0 0;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+.close button {
+    color: #9d9d9d;
+    width: 20px;
+    height: 20px;
+    transition: color 0.15s ease;
+}
+.close button:hover {
+    color: #353535;
+}

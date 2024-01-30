@@ -59,5 +59,9 @@
 .setting .icon {
     width: 24px;
     height: 24px;
+}
+.source a {
+    display: inline-block;
+    width: 24px;
     margin: 0 20px;
 }
