@@ -1,17 +1,23 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import style from "./contact.module.css";
-import { faFacebook } from "@fortawesome/free-brands-svg-icons";
-import { RedirectLink } from "@/components/handleComponents/redirectLink/RedirectLink";
 import { faEnvelope, faSpinner } from "@fortawesome/free-solid-svg-icons";
+import { faFacebook } from "@fortawesome/free-brands-svg-icons";
+
+import { RedirectLink } from "@/components/handleComponents/redirectLink/RedirectLink";
 import Notification from "@/components/notification/Notification";
+
+import style from "./contact.module.css";
 
 const Contact = () => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
     const [sending, setSending] = useState(false);
+    const nameRef = useRef();
+    const emailRef = useRef();
+    const mesageRef = useRef();
+
     const [showSuccessNotification, setShowSuccessNotification] = useState({
         state: false,
         title: "",
@@ -88,6 +94,9 @@ const Contact = () => {
                     message: "Email sent successfully",
                     type: "success",
                 }));
+                nameRef.current.value = "";
+                emailRef.current.value = "";
+                mesageRef.current.value = "";
             } else {
                 setShowSuccessNotification((prevState) => ({
                     state: true,
@@ -143,16 +152,16 @@ const Contact = () => {
                     <div className={style.information}>
                         <div className={style.name}>
                             <h3>NAME</h3>
-                            <input required onChange={(e) => setName(e.target.value)} type="text" placeholder="Your name" />
+                            <input ref={nameRef} required onChange={(e) => setName(e.target.value)} type="text" placeholder="Your name" />
                         </div>
                         <div className={style.email}>
                             <h3>EMAIL</h3>
-                            <input onChange={(e) => setEmail(e.target.value)} type="email" required placeholder="Example@gmail.com" />
+                            <input ref={emailRef} onChange={(e) => setEmail(e.target.value)} type="email" required placeholder="Example@gmail.com" />
                         </div>
                     </div>
                     <div className={style.message}>
                         <h3>MESSAGE</h3>
-                        <textarea required onChange={(e) => setMessage(e.target.value)} maxLength="1024" placeholder="Type messasge (1024 character)" />
+                        <textarea ref={mesageRef} required onChange={(e) => setMessage(e.target.value)} maxLength="1024" placeholder="Type messasge (1024 character)" />
                     </div>
                     <div className={style.sendButton}>
                         <button type="button" disabled={sending} style={sending ? { backgroundColor: "#ffc107" } : null} onClick={handleSubmit}>

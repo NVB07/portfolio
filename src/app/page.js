@@ -4,10 +4,12 @@ import { BgSVG, BgSVG2 } from "@/components/handleComponents/icon/Icons";
 import AboutPart from "@/components/main/part/about/AboutPart";
 import ProjectPart from "@/components/main/part/project/ProjectPart";
 import Contact from "@/components/main/part/contact/Contact";
+import ScrollToTop from "@/components/scrollToTop/ScrollToTop";
 
 export default function Home() {
     return (
         <main className={styles.main}>
+            <ScrollToTop />
             <HomePart />
             <BgSVG styleInline={{ marginBottom: "-4px" }} />
             <AboutPart />
