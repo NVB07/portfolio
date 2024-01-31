@@ -11,7 +11,7 @@ const projects = [
     {
         href: "Portfolio",
         title: "Portfolio",
-        icon: faUser,
+        icon: faHouse,
         descript: "Is this project.",
         imageSrc: "/image/image_projects/portfolio.png",
         riderect: "https://github.com/NVB07/portfolio",
@@ -25,12 +25,12 @@ const projects = [
         riderect: "https://github.com/NVB07/real-time-weather",
     },
     {
-        href: "https://github.com/",
-        title: "https://v1.jstnlt.my.id/#projects",
-        icon: faHouse,
-        descript: "https://v1.jstnlt.my.id/#projects",
-        imageSrc: "https://dulichhoangnguyen.com/upload/images/dai%20dien%201(1).jpg",
-        riderect: "https://v1.jstnlt.my.id/#projects",
+        href: "UserProfile",
+        title: "User profile",
+        icon: faUser,
+        descript: "A card containing basic contact information",
+        imageSrc: "/image/image_projects/userprofile.png",
+        riderect: "https://github.com/NVB07/UserProfile",
     },
 ];
 const ProjectPart = () => {

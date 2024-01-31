@@ -15,8 +15,6 @@ const ScrollToTop = () => {
     };
 
     useEffect(() => {
-        console.log(window.innerHeight, window.scrollY);
-        console.log(showScroll);
         window.addEventListener("scroll", checkScrollTop);
         return () => {
             window.removeEventListener("scroll", checkScrollTop);

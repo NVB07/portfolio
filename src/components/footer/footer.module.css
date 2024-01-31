@@ -1,0 +1,72 @@
+.footer {
+    padding: 40px 40px 80px;
+}
+.footerWrapper {
+    padding: 40px 0;
+    border-top: 1px solid #eee;
+    display: flex;
+}
+.footerLeft,
+.footerRight {
+    width: 50%;
+}
+.footerName h4 {
+    font-size: 14px;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+.footerName h4 p {
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 3px;
+}
+.footerName .codeIcon {
+    color: #6366f1;
+    margin-right: 3px;
+}
+.footerName .heartIcon {
+    color: #ff5555;
+    margin: 0 3px;
+}
+.footerCopyright {
+    font-size: 14px;
+    font-weight: 600;
+}
+.footerName span {
+    color: #31db2b;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+.footerCopyright svg {
+    padding-right: 3px;
+}
+.footerSocialTitle {
+    font-size: 15px;
+    font-weight: 700;
+}
+.socialLink {
+    margin-top: 20px;
+}
+.socialLink a {
+    margin-right: 24px;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    transition: all 0.2s ease;
+}
+.socialLink a svg {
+    width: 24px;
+    height: 24px;
+}
+.socialLink .github:hover {
+    color: #000;
+}
+.socialLink .facebook:hover {
+    color: #0866ff;
+}
+.socialLink .tiktok:hover {
+    color: #000;
+}

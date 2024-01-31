@@ -5,6 +5,7 @@ import AboutPart from "@/components/main/part/about/AboutPart";
 import ProjectPart from "@/components/main/part/project/ProjectPart";
 import Contact from "@/components/main/part/contact/Contact";
 import ScrollToTop from "@/components/scrollToTop/ScrollToTop";
+import Footer from "@/components/footer/Footer";
 
 export default function Home() {
     return (
@@ -18,6 +19,7 @@ export default function Home() {
             <BgSVG styleInline={{ marginBottom: "-4px" }} />
             <Contact />
             <BgSVG2 />
+            <Footer />
         </main>
     );
 }

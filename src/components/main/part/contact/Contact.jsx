@@ -94,6 +94,9 @@ const Contact = () => {
                     message: "Email sent successfully",
                     type: "success",
                 }));
+                setName("");
+                setEmail("");
+                setMessage("");
                 nameRef.current.value = "";
                 emailRef.current.value = "";
                 mesageRef.current.value = "";
