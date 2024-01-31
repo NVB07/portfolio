@@ -65,3 +65,72 @@
     width: 24px;
     margin: 0 20px;
 }
+/* mobile */
+.mobileNavigate {
+    background-color: var(--bgc-menu-mobile);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    top: 100%;
+}
+.toggleMenu {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    margin-left: 20px;
+}
+.toggleButton {
+    font-size: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.7s ease;
+}
+.MobileNavWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 94px;
+    width: 100%;
+    padding: 0 8px;
+    border-bottom: 1px solid #eee;
+    position: relative;
+}
+.MobileNavWrapper .navigate {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 94px;
+    left: 0;
+    background-color: #0000003b;
+    z-index: 1;
+}
+.mobileNavigate .setting {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.mobileNavigate .link {
+    height: 40px;
+    margin-left: 0px;
+}
+.mobileNavigate .source a {
+    user-select: none;
+    display: inline-block;
+    width: 24px;
+    margin: 0;
+}
+.mobileNavigate {
+    padding: 0 40px 20px;
+}
+@media (max-width: 480px) {
+    .nav {
+        padding: 0 20px;
+    }
+}

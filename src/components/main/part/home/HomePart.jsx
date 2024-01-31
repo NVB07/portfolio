@@ -50,7 +50,7 @@ const HomePart = () => {
                     </h1>
                     <div className={style.descript}>
                         Someone who likes to
-                        <div className={style.typing}>{character}</div>
+                        <span className={style.typing}>{character}</span>
                     </div>
                 </div>
 

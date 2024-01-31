@@ -56,7 +56,7 @@ const Contact = () => {
                 message: "Please enter a name",
                 type: "warning",
             }));
-
+            nameRef.current.focus();
             return;
         } else if (!/^[\w-]+(\.[\w-]+)*@[\w-]+(\.[\w-]+)+$/.test(email.trim())) {
             setShowSuccessNotification((prevState) => ({
@@ -65,7 +65,7 @@ const Contact = () => {
                 message: "Please enter a email address",
                 type: "warning",
             }));
-
+            emailRef.current.focus();
             return;
         } else if (message.trim() === "") {
             setShowSuccessNotification((prevState) => ({
@@ -74,7 +74,7 @@ const Contact = () => {
                 message: "Please enter a message",
                 type: "warning",
             }));
-
+            mesageRef.current.focus();
             return;
         }
         try {

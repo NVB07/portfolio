@@ -57,3 +57,15 @@
     font-size: 20px;
     font-weight: 700;
 }
+@media (max-width: 800px) {
+    .CardWrapper.CardWrapper_left,
+    .CardWrapper.CardWrapper_right {
+        justify-content: center;
+        margin-bottom: 35px;
+    }
+    .CardArea {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+}

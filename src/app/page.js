@@ -10,16 +10,18 @@ import Footer from "@/components/footer/Footer";
 export default function Home() {
     return (
         <main className={styles.main}>
-            <ScrollToTop />
-            <HomePart />
-            <BgSVG styleInline={{ marginBottom: "-4px" }} />
-            <AboutPart />
-            <BgSVG2 />
-            <ProjectPart />
-            <BgSVG styleInline={{ marginBottom: "-4px" }} />
-            <Contact />
-            <BgSVG2 />
-            <Footer />
+            <div className={styles.mainWrapper}>
+                <ScrollToTop />
+                <HomePart />
+                <BgSVG styleInline={{ marginBottom: "-4px" }} />
+                <AboutPart />
+                <BgSVG2 />
+                <ProjectPart />
+                <BgSVG styleInline={{ marginBottom: "-4px" }} />
+                <Contact />
+                <BgSVG2 />
+                <Footer />
+            </div>
         </main>
     );
 }

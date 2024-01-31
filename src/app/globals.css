@@ -10,6 +10,7 @@
     --transparent-button-hover: 42, 166, 154;
     --second-bg: #e3f2fd;
     --padding-body: 24px;
+    --bgc-menu-mobile: #fff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,6 +23,7 @@
         --primary-color-button-hover: 255, 46, 166;
         --transparent-button: 229, 166, 102;
         --transparent-button-hover: 255, 149, 35;
+        --bgc-menu-mobile: #282a36;
     }
 }
 
@@ -37,6 +39,7 @@
     --transparent-button-hover: 42, 166, 154;
     --buttonview-github-bg: #3d4451;
     --buttonview-github-bg-hover: #313641;
+    --bgc-menu-mobile: #fff;
 }
 [data-theme="dark"] {
     color-scheme: dark;
@@ -50,6 +53,7 @@
     --transparent-button-hover: 255, 149, 35;
     --buttonview-github-bg: #414558;
     --buttonview-github-bg-hover: #343746;
+    --bgc-menu-mobile: #282a36;
 }
 
 * {
