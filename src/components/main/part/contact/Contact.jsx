@@ -133,7 +133,9 @@ const Contact = () => {
                         </div>
                         <ul>
                             <li className={style.LiLink}>
-                                <RedirectLink style={style.link} href={"/facebook"} riderectLink={"https://www.facebook.com/binh.jupiter"} children={"binh.jupiter"} />
+                                <RedirectLink style={style.link} href={"/facebook"} riderectLink={"https://www.facebook.com/binh.jupiter"}>
+                                    binh.jupiter
+                                </RedirectLink>
                             </li>
                         </ul>
                     </div>

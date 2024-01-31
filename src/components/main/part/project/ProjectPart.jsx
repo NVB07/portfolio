@@ -58,16 +58,9 @@ const ProjectPart = () => {
                 </div>
             </div>
             <div className={style.butonViewGithub}>
-                <RedirectLink
-                    href={"/github"}
-                    riderectLink={"https://github.com/NVB07?tab=repositories"}
-                    style={style.button}
-                    children={
-                        <>
-                            <FontAwesomeIcon icon={faGithub} /> <p>View all my projects &gt;</p>
-                        </>
-                    }
-                />
+                <RedirectLink href={"/github"} riderectLink={"https://github.com/NVB07?tab=repositories"} style={style.button}>
+                    <FontAwesomeIcon icon={faGithub} /> <p>View all my projects &gt;</p>
+                </RedirectLink>
             </div>
         </div>
     );

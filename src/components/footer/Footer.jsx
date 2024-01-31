@@ -34,9 +34,15 @@ const Footer = () => {
                         <div className={style.footerSocialTitle}>SOCIAL</div>
                     </div>
                     <div className={style.socialLink}>
-                        <RedirectLink href={"/github"} riderectLink={socialLinks.github} style={style.github} children={<FontAwesomeIcon className={style.icon} icon={faGithub} />} />
-                        <RedirectLink href={"/facebook"} riderectLink={socialLinks.facebook} style={style.facebook} children={<FontAwesomeIcon className={style.icon} icon={faFacebook} />} />
-                        <RedirectLink href={"/tiktok"} riderectLink={socialLinks.tiktok} style={style.tiktok} children={<FontAwesomeIcon className={style.icon} icon={faTiktok} />} />
+                        <RedirectLink href={"/github"} riderectLink={socialLinks.github} style={style.github}>
+                            <FontAwesomeIcon className={style.icon} icon={faGithub} />
+                        </RedirectLink>
+                        <RedirectLink href={"/facebook"} riderectLink={socialLinks.facebook} style={style.facebook}>
+                            <FontAwesomeIcon className={style.icon} icon={faFacebook} />
+                        </RedirectLink>
+                        <RedirectLink href={"/tiktok"} riderectLink={socialLinks.tiktok} style={style.tiktok}>
+                            <FontAwesomeIcon className={style.icon} icon={faTiktok} />
+                        </RedirectLink>
                     </div>
                 </div>
             </div>
