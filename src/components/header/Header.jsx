@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useLayoutEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faCode, faHouse, faUser, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -10,18 +10,21 @@ import style from "./Header.module.css";
 import ToggleTheme from "../handleComponents/toggleTheme/ToggleTheme";
 
 const Header = () => {
-    const withScreen = window.innerWidth;
-    const [screenWidth, setScreenWidth] = useState(withScreen);
+    const [screenWidth, setScreenWidth] = useState(0);
     const handleResize = () => {
         setScreenWidth(window.innerWidth);
     };
     const [showToogleMenu, setShowToogleMenu] = useState(false);
-    useEffect(() => {
-        window.addEventListener("resize", handleResize);
-        setScreenWidth(window.innerWidth);
-        return () => {
-            window.removeEventListener("resize", handleResize);
-        };
+
+    useLayoutEffect(() => {
+        // Kiểm tra xem có đang chạy trên trình duyệt hay không
+        if (typeof window !== "undefined") {
+            window.addEventListener("resize", handleResize);
+            setScreenWidth(window.innerWidth);
+            return () => {
+                window.removeEventListener("resize", handleResize);
+            };
+        }
     }, []);
 
     const handleDropdown = () => {
