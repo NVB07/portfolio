@@ -1,4 +1,5 @@
 "use client";
+
 import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faCode, faHouse, faUser, faXmark } from "@fortawesome/free-solid-svg-icons";
@@ -9,7 +10,8 @@ import style from "./Header.module.css";
 import ToggleTheme from "../handleComponents/toggleTheme/ToggleTheme";
 
 const Header = () => {
-    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+    const withScreen = window.innerWidth;
+    const [screenWidth, setScreenWidth] = useState(withScreen);
     const handleResize = () => {
         setScreenWidth(window.innerWidth);
     };
