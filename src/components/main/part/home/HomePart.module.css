@@ -3,7 +3,7 @@
     width: 100%;
     display: flex;
     align-items: center;
-    padding: 150px calc(24px + var(--padding-body)) 0;
+    padding: 40px calc(24px + var(--padding-body)) 0;
 }
 
 .leftContent {

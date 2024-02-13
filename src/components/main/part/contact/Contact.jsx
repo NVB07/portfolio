@@ -9,7 +9,7 @@ import Notification from "@/components/notification/Notification";
 
 import style from "./contact.module.css";
 
-const Contact = () => {
+const Contact = ({ currentRef }) => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
@@ -122,7 +122,7 @@ const Contact = () => {
         }
     };
     return (
-        <div id="contact" className={style.contact}>
+        <div ref={currentRef} id="contact" className={style.contact}>
             <h3 className={style.title}>Get in Touch</h3>
             <div className={style.main}>
                 <div className={style.left}>

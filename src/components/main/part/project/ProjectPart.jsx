@@ -33,9 +33,9 @@ const projects = [
         riderect: "https://github.com/NVB07/UserProfile",
     },
 ];
-const ProjectPart = () => {
+const ProjectPart = ({ currentRef }) => {
     return (
-        <div id="project" className={style.project}>
+        <div ref={currentRef} id="project" className={style.project}>
             <div className={style.title}>
                 <h1>Some of My Projects</h1>
             </div>

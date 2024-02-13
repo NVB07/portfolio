@@ -1,0 +1,88 @@
+.shortUrl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    padding-top: 40px;
+}
+.shortUrl h4 {
+    margin-bottom: 20px;
+}
+.wrapper {
+    max-width: 600px;
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0 0 5px 0 #686868;
+    border-radius: 12px;
+}
+
+.longURLArea {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.longURLTextArea {
+    width: 100%;
+    min-height: 100px;
+    resize: vertical;
+    font-size: 16px;
+    padding: 10px;
+    background-color: rgb(var(--background-rgb));
+    border: none;
+    box-shadow: 0 0 5px 0 #686868;
+    outline: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.buttonGetLink {
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: rgb(var(--primary-color-button));
+    margin-bottom: 25px;
+}
+
+.shortURLArea {
+    display: flex;
+    align-items: center;
+}
+
+.shortURLArea input {
+    flex: 1;
+    background-color: rgb(var(--background-rgb));
+    height: 50px;
+    font-size: 14px;
+    padding: 10px;
+    font-family: monospace;
+    margin-right: 10px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 5px 0 #686868;
+    border-radius: 5px;
+}
+.shortURLArea input:hover {
+    cursor: text;
+}
+
+.buttoncopy {
+    width: 70px;
+    height: 50px;
+    background-color: #01a124;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.buttonGetLink,
+.buttoncopy {
+    color: #fff;
+    transition: transform 0.15s ease;
+}
+.buttonGetLink:active,
+.buttoncopy:active {
+    transform: scale(0.9);
+}

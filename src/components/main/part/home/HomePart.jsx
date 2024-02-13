@@ -1,14 +1,14 @@
 "use client";
 import { useEffect, useState } from "react";
 import { faFacebook, faGithub, faTiktok } from "@fortawesome/free-brands-svg-icons";
-import { faCode, faHouse, faUser } from "@fortawesome/free-solid-svg-icons";
+import { faCode,  faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 
 import { socialLinks, RedirectLink } from "@/components/handleComponents/redirectLink/RedirectLink";
 import style from "./HomePart.module.css";
 
-const HomePart = () => {
+const HomePart = ({ currentRef }) => {
     const state = [" gaming ", " coding ", " sleeping "];
 
     const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
@@ -42,7 +42,7 @@ const HomePart = () => {
     }, []);
 
     return (
-        <div id="home" className={style.home}>
+        <div ref={currentRef} id="home" className={style.home}>
             <div className={style.leftContent}>
                 <div className={style.title}>
                     <h1 className={style.greeting}>

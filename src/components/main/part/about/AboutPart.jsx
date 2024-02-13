@@ -3,9 +3,9 @@ import Image from "next/image";
 
 import style from "./AboutPart.module.css";
 
-const AboutPart = () => {
+const AboutPart = ({ currentRef }) => {
     return (
-        <div id="about" className={style.about}>
+        <div ref={currentRef} id="about" className={style.about}>
             <div className={style.leftContent}>
                 <div className={style.imageWrapper}>
                     <Image alt="Dev image" src={"/image/image2.png"} className={style.image} width={580} height={580} priority />

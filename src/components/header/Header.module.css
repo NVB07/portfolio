@@ -33,10 +33,11 @@
 .link {
     height: 40px;
     margin-left: 32px;
+    font-size: 16px;
 }
 
 .link:hover {
-    color: #3838ca;
+    color: #d200ee;
 }
 
 .link .icon {
@@ -81,6 +82,7 @@
     margin-left: 20px;
 }
 .toggleButton {
+    color: rgb(var(--foreground-rgb));
     font-size: 24px;
     position: absolute;
     top: 0;
@@ -126,6 +128,13 @@
     width: 24px;
     margin: 0;
 }
+a.link {
+    color: #757575;
+}
+.linkActive {
+    color: #d200ee !important;
+}
+
 .mobileNavigate {
     padding: 0 40px 20px;
 }
