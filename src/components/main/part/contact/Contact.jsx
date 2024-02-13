@@ -52,25 +52,25 @@ const Contact = ({ currentRef }) => {
         if (name.trim() === "") {
             setShowSuccessNotification((prevState) => ({
                 state: true,
-                title: "warning",
+                title: "require",
                 message: "Please enter a name",
-                type: "warning",
+                type: "error",
             }));
             nameRef.current.focus();
             return;
         } else if (!/^[\w-]+(\.[\w-]+)*@[\w-]+(\.[\w-]+)+$/.test(email.trim())) {
             setShowSuccessNotification((prevState) => ({
                 state: true,
-                title: "warning",
-                message: "Please enter a email address",
-                type: "warning",
+                title: "require",
+                message: "Please enter a email",
+                type: "error",
             }));
             emailRef.current.focus();
             return;
         } else if (message.trim() === "") {
             setShowSuccessNotification((prevState) => ({
                 state: true,
-                title: "warning",
+                title: "require",
                 message: "Please enter a message",
                 type: "warning",
             }));
