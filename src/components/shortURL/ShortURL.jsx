@@ -109,7 +109,7 @@ const ShortURL = () => {
         navigator.clipboard.writeText(text).then(() => {
             setShowNotification((prevState) => ({
                 state: true,
-                title: "copyed",
+                title: "copied",
                 message: "Copy was successful",
                 type: "success",
             }));

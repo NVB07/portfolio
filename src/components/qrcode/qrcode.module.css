@@ -1,0 +1,83 @@
+.main {
+    padding-top: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main h4 {
+    margin-bottom: 20px;
+}
+.box {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 0 5px 0 #686868;
+}
+.QRcode {
+    margin-top: 20px;
+    box-shadow: 0 0 5px 0 #686868;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+.qrcodesvg {
+    padding: 10px;
+}
+.optionsQR {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+.optionsQR input {
+    width: 50px;
+}
+.optionsQR p {
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+.ColorArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+}
+
+.selectLevel {
+    width: 50px;
+    height: 27px;
+    outline: none;
+}
+
+.textInput {
+    width: 296px;
+}
+.textInput textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(var(--background-rgb));
+    min-height: 50px;
+    max-height: 100px;
+    outline: none;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: vertical;
+}
+.buttonDownload {
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: #009900;
+    transition: transform 0.15s ease;
+}
+.buttonDownload:active {
+    transform: scale(0.9);
+}
