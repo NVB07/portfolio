@@ -1,0 +1,15 @@
+.colorArea .react-colorful {
+    width: 220px;
+    height: 220px;
+    border: 1px solid #808080;
+    border-radius: 8px;
+}
+/* .colorArea .react-colorful__saturation {
+}
+.colorArea .react-colorful__hue {
+}
+.colorArea .react-colorful__hue-pointer {
+} */
+.colorArea .react-colorful__pointer {
+    box-shadow: 0 0 5px 0 #000000;
+}

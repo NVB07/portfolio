@@ -36,6 +36,22 @@
 .optionsQR input {
     width: 50px;
 }
+
+.optionsQR input[type="color"] {
+    -webkit-appearance: none;
+    border: none;
+    box-shadow: 0 0 5px 0 #686868;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.optionsQR input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+.optionsQR input[type="color"]::-webkit-color-swatch {
+    border: none;
+}
+
 .optionsQR p {
     font-size: 14px;
     margin-bottom: 2px;
@@ -80,4 +96,15 @@
 }
 .buttonDownload:active {
     transform: scale(0.9);
+}
+
+/* .customSelect {
+    max-width: 50px;
+    position: relative;
+}
+*/
+.selectLevel {
+    border: 1px solid #caced1;
+    border-radius: 0.25rem;
+    cursor: pointer;
 }

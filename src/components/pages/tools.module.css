@@ -1,3 +1,10 @@
 .main {
     padding: 0 20px;
 }
+.notFound {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: red;
+}

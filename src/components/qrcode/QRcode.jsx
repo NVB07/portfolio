@@ -49,12 +49,14 @@ const QRcode = () => {
                     </div>
                     <div className={style.ColorArea}>
                         <p> Level</p>
-                        <select onChange={(e) => setLevel(e.target.value)} className={style.selectLevel} name="level">
-                            <option value="L">L</option>
-                            <option value="M">M</option>
-                            <option value="Q">Q</option>
-                            <option value="H">H</option>
-                        </select>
+                        <div className={style.customSelect}>
+                            <select onChange={(e) => setLevel(e.target.value)} className={style.selectLevel} name="level">
+                                <option value="L">L</option>
+                                <option value="M">M</option>
+                                <option value="Q">Q</option>
+                                <option value="H">H</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
                 <div className={style.textInput}>
