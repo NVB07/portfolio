@@ -28,7 +28,7 @@ const ColorPicker = () => {
     return (
         <div className={style.ColorPicker}>
             <h4>Color Picker</h4>
-            <div style={{ backgroundColor: "#" + hexAlphaColor.r + hexAlphaColor.g + hexAlphaColor.g + hexAlphaColor.a }} className={style.box}>
+            <div style={{ backgroundColor: "#" + hexAlphaColor.r + hexAlphaColor.g + hexAlphaColor.b + hexAlphaColor.a }} className={style.box}>
                 <div className={`${style.colorArea} colorArea`}>
                     <RgbaColorPicker color={RgbaColor} onChange={setRgbaColor} />
                 </div>
